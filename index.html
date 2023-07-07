@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scrollBar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <title>RetroWheels</title>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="inner">
+        <img src="img/car.gif" />
+      </div>
+    </div>
+
+    <header>
+      <a href="#slider-mask" id="title" class="not-anim">
+        <h1 id="title-h1">RetroWheels</h1></a
+      >
+
+      <nav id="content-nav">
+        <ul id="nav-list">
+          <li><a href="#content-info" class="anim">Sobre a loja</a></li>
+          <li><a href="#" class="anim">Semi-novos</a></li>
+          <li><a href="#" class="anim">Novos</a></li>
+          <li><a href="#" class="anim">Contato</a></li>
+        </ul>
+        <button id="bar-sidebar">
+          <div id="bar-sidebar-middle"></div>
+        </button>
+      </nav>
+    </header>
+    <aside id="sidebar" class="sidebar-disabled">
+      <ul id="nav-list-sidebar">
+        <a href="#content-info"><li>Sobre a loja</li></a>
+        <a href="#"> <li>Semi-novos</li></a>
+        <a href="#"><li>Novos</li></a>
+        <a href="#"><li>Contato</li></a>
+      </ul>
+    </aside>
+    <main>
+      <section id="slider-container">
+        <button id="right-arrow" onclick="Slider(true)">
+          <img src="img/arrow.webp" />
+        </button>
+        <button id="left-arrow" onclick="Slider(false)">
+          <img src="img/arrow.webp" />
+        </button>
+
+        <div id="slider-mask">
+          <div id="slider-content">
+            <div id="photo-01"></div>
+            <div id="photo-02"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div id="content-info">
+          <section>
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="sobre.html">Quem somos</a></li>
+              <li><a href="#">Localização</a></li>
+            </ul>
+          </section>
+          <section>
+            <h4>Entre em contato</h4>
+            <ul>
+              <li>(11) 9 4732-2399</li>
+              <li id="info-email">contato@techgonz.com.br</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Anuncie Agora</h4>
+            <ul>
+              <li><a href="#">Termos de uso</a></li>
+              <li><a href="#">Planos e preços</a></li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section id="copy-content">
+        <p>&copy; Todos os direitos reservado TECHGONZ.ltda</p>
+      </section>
+    </footer>
+
+    <script src="sidebar.js"></script>
+    <script src="slider.js"></script>
+    <script src="loading.js"></script>
+  </body>
+</html>

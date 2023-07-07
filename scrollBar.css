@@ -1,0 +1,18 @@
+:root {
+  --black: #1e2022;
+  --gray: #39333d;
+  --white: #c4c4c4;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 1px;
+}
